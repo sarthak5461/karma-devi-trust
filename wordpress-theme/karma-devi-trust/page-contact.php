@@ -1,0 +1,218 @@
+<?php /* Auto-converted from contact.html */ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Karma Devi Trust</title>
+  <meta name="description" content="Get in touch with Karma Devi Trust. Reach out for partnerships, volunteering, donations, or general inquiries. Based in Varanasi, Uttar Pradesh.">
+  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri() . '/css/style.css'); ?>">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
+  <?php wp_head(); ?>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar__brand">
+        <span class="navbar__brand-icon"><span class="material-symbols-rounded">favorite</span></span>
+        Karma Devi Trust
+      </a>
+      <div class="navbar__links">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar__link">Home</a>
+        <a href="<?php echo esc_url(home_url('/about/')); ?>" class="navbar__link">About</a>
+        <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="navbar__link">Programs</a>
+        <a href="<?php echo esc_url(home_url('/donate/')); ?>" class="navbar__link">Donate</a>
+        <a href="<?php echo esc_url(home_url('/register/')); ?>" class="navbar__link">Register</a>
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="navbar__link navbar__link--active">Contact</a>
+      </div>
+      <a href="<?php echo esc_url(home_url('/donate/')); ?>" class="btn btn--secondary btn--sm btn--pill navbar__cta">Donate Now</a>
+      <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="<?php echo esc_url(home_url('/')); ?>">Home</a><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a><a href="<?php echo esc_url(home_url('/programs/')); ?>">Programs</a>
+    <a href="<?php echo esc_url(home_url('/donate/')); ?>">Donate</a><a href="<?php echo esc_url(home_url('/register/')); ?>">Register</a><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a>
+    <a href="<?php echo esc_url(home_url('/donate/')); ?>" class="btn btn--secondary btn--pill" style="margin-top:1rem;">Donate Now</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="display-lg">Get in Touch</h1>
+      <p class="page-hero__subtitle body-lg">Your support helps us bring sustainable change to rural communities in Uttar Pradesh.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section" id="contact-main">
+    <div class="container">
+      <div class="grid-2" style="gap: var(--space-10); align-items: start;">
+
+        <!-- Contact Form -->
+        <div class="card animate-on-scroll" style="padding: var(--space-10);">
+          <h2 class="headline-md mb-6">Send Us a Message</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="fullName" class="form-input" placeholder="Your full name" required>
+            </div>
+            <div class="grid-2" style="gap: var(--space-4);">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" class="form-select" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="volunteering">Volunteering</option>
+                <option value="donations">Donations</option>
+                <option value="partnership">Partnership</option>
+                <option value="media">Media</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--pill" style="width: 100%;">
+              <span class="material-symbols-rounded">send</span>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <!-- Info Cards -->
+          <div class="card contact-info-card animate-on-scroll animate-delay-1 mb-4">
+            <div class="contact-info-card__icon">
+              <span class="material-symbols-rounded">location_on</span>
+            </div>
+            <div>
+              <div class="contact-info-card__title">Our Base</div>
+              <div class="contact-info-card__text">B 21/45 A-1, Kamachha,<br>Varanasi, UP 221010, India</div>
+            </div>
+          </div>
+
+          <div class="card contact-info-card animate-on-scroll animate-delay-2 mb-4">
+            <div class="contact-info-card__icon">
+              <span class="material-symbols-rounded">call</span>
+            </div>
+            <div>
+              <div class="contact-info-card__title">Call Us</div>
+              <div class="contact-info-card__text">
+                <a href="tel:+915422450987" style="color: var(--primary);">+91 542 245 0987</a><br>
+                <span class="body-sm text-muted">Mon-Fri, 9am - 6pm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card contact-info-card animate-on-scroll animate-delay-3 mb-4">
+            <div class="contact-info-card__icon">
+              <span class="material-symbols-rounded">mail</span>
+            </div>
+            <div>
+              <div class="contact-info-card__title">Email</div>
+              <div class="contact-info-card__text">
+                <a href="mailto:hello@karmadevitrust.org" style="color: var(--primary);">hello@karmadevitrust.org</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="card animate-on-scroll animate-delay-4 mb-4" style="padding: var(--space-6);">
+            <div class="title-md mb-4">Connect With Us</div>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"><span class="material-symbols-rounded">public</span></a>
+              <a href="#" class="social-link" aria-label="Instagram"><span class="material-symbols-rounded">photo_camera</span></a>
+              <a href="#" class="social-link" aria-label="Twitter"><span class="material-symbols-rounded">share</span></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><span class="material-symbols-rounded">work</span></a>
+              <a href="#" class="social-link" aria-label="YouTube"><span class="material-symbols-rounded">play_circle</span></a>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder animate-on-scroll">
+            <span class="material-symbols-rounded" style="font-size: 2rem;">location_on</span>
+            <span>Varanasi, Uttar Pradesh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section class="section bg-surface-low" id="quick-links">
+    <div class="container text-center">
+      <h3 class="headline-md mb-6 animate-on-scroll">Quick Links</h3>
+      <div class="quick-links animate-on-scroll" style="justify-content: center;">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="quick-link">Home</a>
+        <a href="<?php echo esc_url(home_url('/about/')); ?>" class="quick-link">About</a>
+        <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="quick-link">Programs</a>
+        <a href="<?php echo esc_url(home_url('/donate/')); ?>" class="quick-link">Donate</a>
+        <a href="#contact-main" class="quick-link">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">🤍 Karma Devi Trust</div>
+          <p class="footer__desc">Registered Non-Profit Organisation dedicated to social upliftment since 2005.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><span class="material-symbols-rounded">public</span></a>
+            <a href="#" class="social-link" aria-label="Instagram"><span class="material-symbols-rounded">photo_camera</span></a>
+            <a href="#" class="social-link" aria-label="Twitter"><span class="material-symbols-rounded">share</span></a>
+            <a href="#" class="social-link" aria-label="YouTube"><span class="material-symbols-rounded">play_circle</span></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <a href="<?php echo esc_url(home_url('/')); ?>" class="footer__link">Home</a>
+          <a href="<?php echo esc_url(home_url('/about/')); ?>" class="footer__link">About Us</a>
+          <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="footer__link">Programs</a>
+          <a href="<?php echo esc_url(home_url('/donate/')); ?>" class="footer__link">Donate</a>
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <div class="footer__heading">Programs</div>
+          <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="footer__link">Education</a>
+          <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="footer__link">Healthcare</a>
+          <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="footer__link">Women Empowerment</a>
+          <a href="<?php echo esc_url(home_url('/programs/')); ?>" class="footer__link">Sustainability</a>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="footer__link">B 21/45 A-1, Kamachha</a>
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="footer__link">Varanasi, UP 221010</a>
+          <a href="tel:+915422450987" class="footer__link">+91 542 245 0987</a>
+          <a href="mailto:hello@karmadevitrust.org" class="footer__link">hello@karmadevitrust.org</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Karma Devi Trust. All Rights Reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="<?php echo esc_url(get_template_directory_uri() . '/js/main.js'); ?>"></script>
+  <?php wp_footer(); ?>
+</body>
+</html>

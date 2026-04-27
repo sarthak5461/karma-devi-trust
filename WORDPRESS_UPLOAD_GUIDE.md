@@ -1,6 +1,10 @@
 # Upload this Project to WordPress (Step-by-Step)
 
 This repository is a **static website** (`index.html`, `about.html`, `programs.html`, etc.).
+codex/upload-project-to-wordpress-mmljun
+> ✅ Theme source is included in this repo at `wordpress-theme/karma-devi-trust/`.
+> Build the upload ZIP locally with `./scripts/build-wordpress-theme-zip.sh` (produces `dist/karma-devi-trust-theme.zip`).
+ main
 The cleanest way to run it on WordPress is to package it as a **custom theme**.
 
 ---
